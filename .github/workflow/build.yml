@@ -1,0 +1,58 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: NaDGenLib Page Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: pipenv
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          check-latest: true
+      - name: Install Python dependencies
+        run: |
+          curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python3
+          pipenv install
+      - name: Cache Node.js dependencies
+        uses: actions/cache@v3
+        id: cache-node
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('yarn.lock') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: Install Node.js dependencies
+        if: steps.cache-node.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile --production
+      - name: Page Build
+        run: |
+          pipenv run mkdocs build -v
+      - name: Post-process HTML
+        run: yarn ts-node-esm scripts/post-build/html-postprocess.ts commits-info math
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_OPTIONS: --max_old_space_size=3072
+      - name: Minify html
+        run: ./scripts/post-build/minify-html/minify-html.sh
+      - name: Deploy to gh-pages
+        if: ${{ github.event_name == 'push' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
