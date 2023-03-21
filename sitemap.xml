@@ -20,4 +20,34 @@
          <lastmod>2023-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://larry0716.github.io/NaDGenLib-docs/graph/Graph/</loc>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://larry0716.github.io/NaDGenLib-docs/random/Random/</loc>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://larry0716.github.io/NaDGenLib-docs/random/frand/</loc>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://larry0716.github.io/NaDGenLib-docs/random/irand/</loc>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://larry0716.github.io/NaDGenLib-docs/random/srand/</loc>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://larry0716.github.io/NaDGenLib-docs/seq_per/Permutation/</loc>
+         <lastmod>2023-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
