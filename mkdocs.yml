@@ -60,6 +60,7 @@ nav:
   - 文档:
     - 0. 简介: NaDGenLib-docs/README.md
     - 1. 开始: NaDGenLib-docs/startup.md
+    - 2. 快速上手: NaDGenLib-docs/QuickStart.md
 
 markdown_extensions:
   - admonition
