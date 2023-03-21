@@ -1,6 +1,6 @@
 # Home
 
-欢迎来到 NaDGenLib 的使用手册！（当然，也是俺的博客啦）
+欢迎来到 NaDGenLib 的使用手册！（当然，也是 Larry76 的博客啦）
 
 为了保证您的使用体验，下面将会对一些内容进行测试，请查看其是否正确 qwq。
 
@@ -230,6 +230,103 @@ int main(){
     return 0;
 }
 ```
+
+??? 这是收起来的样子
+    === "C++"
+
+        ```cpp
+        #define _CRT_SECURE_NO_WARNINGS
+        #include <opencv.hpp>
+        #include <windows.h>
+        #include <conio.h>
+        using namespace std;
+        using namespace cv;
+        #define MAX_COL 1024
+        #define MAX_ROW 2048
+        //#define MAX_SIZE 6746
+        char shadowvector[] = "@$#%&WASGHKBMRDFZXNVCJLQOTPYEUIab987654321~?!^*()<>+-=[]{},.    ";
+        long long len;
+        char framemat[MAX_ROW][MAX_COL];
+        char gray2char(int level) {
+            level = 255 - level;
+            return shadowvector[(int)level / 4];
+        }
+        int main() {
+            len = strlen(shadowvector)-1;
+            HANDLE handle = GetStdHandle(((DWORD)-11));
+            CONSOLE_FONT_INFOEX cfi;
+            cfi.cbSize = sizeof(CONSOLE_FONT_INFOEX);
+            COORD size;
+            size.X = 3;
+            size.Y = 5;
+            cfi.dwFontSize = size;
+            wcscpy(cfi.FaceName, L"Arial");
+            cfi.FontWeight = 100;
+            cfi.FontFamily = TMPF_TRUETYPE;
+            cfi.nFont = 0;
+            SetCurrentConsoleFontEx(handle, TRUE, &cfi);
+            int T = 6574+1;
+            _getch();
+            double c1 = clock();
+            while (--T) {
+                int t1 = clock();
+                char strbuf[1024];
+                sprintf(strbuf, "./frames/%d.png", 6574 - T + 1);
+                Mat srcImage = imread(strbuf);
+                Mat temImage, dstImage1;
+                temImage = srcImage;
+                resize(temImage, dstImage1, Size(0, 0), (double)1/4+1, (double)1/8+0.5, INTER_LINEAR);
+                cvtColor(dstImage1, dstImage1, COLOR_RGB2GRAY);
+                int cnt = 0;
+                for (int i = 0,j; i < dstImage1.rows; i++) {
+                    for (j = 0; j < dstImage1.cols; j++)
+                        framemat[i][j] = gray2char(dstImage1.ptr<uchar>(i)[j]);
+                    framemat[i][j] = '\0';
+                }
+                for (int i = 0; i < dstImage1.rows; i++) {
+                    COORD pos;
+                    pos.X = 0;
+                    pos.Y = i;
+                    DWORD real;
+                    WriteConsoleOutputCharacter(handle, framemat[i], strlen(framemat[i])*sizeof(char), pos, &real);
+                }
+                int t2 = clock();
+                int sl = 33 - t2 + t1;
+                Sleep(sl<0?0:sl);
+            }
+            double c2 = clock();
+            printf("%.3lf", (c2 - c1) / CLOCKS_PER_SEC);
+            system("pause");
+            return 0;
+        }
+        ```
+
+    === "Python"
+
+        ```python
+        import cv2 
+        ascii_char = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. ") 
+        def get_char(gray_number): 
+            length = len(ascii_char) 
+            unit = (256.0 + 1)/length 
+            return ascii_char[int(gray_number/unit)] 
+        def convert(source, dest):
+            image1 = cv2.imread(source) 
+            image = cv2.resize(image1,(232,87)) 
+            gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY) 
+            txt = "" 
+            for i in range(image.shape[0]): 
+                for j in range(image.shape[1]): 
+                    txt += get_char(gray[i,j]) 
+                txt += '\n' 
+            f = open(dest,'w') 
+            f.write(txt)
+
+        if __name__ == '__main__':
+            for i in range(1,6574):
+                convert("%d.png"%i,'.\\txt\\%d.txt'%i);
+                print("Finished Converting %d/6574"%i,end='\r');
+        ```
 
 ~~顺便测试了较大文件传输，还有删除线~~
 

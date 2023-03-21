@@ -10,14 +10,14 @@
         <meta name="author" content="Larry Green">
       
       
-        <link rel="canonical" href="https://larry0716.github.io/NaDGenLib-docs/startup/">
+        <link rel="canonical" href="https://larry0716.github.io/NaDGenLib-docs/QuickStart/">
       
       <link rel="icon" href="../..">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>1. 开始 - NaDGenLib Docs</title>
+        <title>2. 快速上手 - NaDGenLib Docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nadgenlib" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. 开始
+              2. 快速上手
             
           </span>
         </div>
@@ -378,6 +378,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../startup/" class="md-nav__link">
+        1. 开始
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -390,12 +404,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          1. 开始
+          2. 快速上手
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        1. 开始
+        2. 快速上手
       </a>
       
         
@@ -414,8 +428,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nadgenlib_1" class="md-nav__link">
-    使用 NaDGenLib
+  <a href="#_2" class="md-nav__link">
+    基本结构：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    生成器
   </a>
   
 </li>
@@ -424,20 +445,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../QuickStart/" class="md-nav__link">
-        2. 快速上手
-      </a>
     </li>
   
 
@@ -476,8 +483,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nadgenlib_1" class="md-nav__link">
-    使用 NaDGenLib
+  <a href="#_2" class="md-nav__link">
+    基本结构：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    生成器
   </a>
   
 </li>
@@ -496,21 +510,161 @@
                 
                   
 
-  <a href="https://github.com/larry0716/NaDGenLib/edit/main/docs/NaDGenLib-docs/startup.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/larry0716/NaDGenLib/edit/main/docs/NaDGenLib-docs/QuickStart.md" title="编辑此页" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="nadgenlib">开始使用 NaDGenLib<a class="headerlink" href="#nadgenlib" title="Permanent link">&para;</a></h1>
-<p>欢迎来到 NaDGenLib 的教学关卡，希望在这里能找到你能有所收获。</p>
-<p>如果文档有问题，请提交在项目里 Issue 来进行反馈，感谢大家对 NaDGenLib 的支持！！</p>
-<p>NaDGenLib 是一个平凡的数据生成器，目的是实现短时的中等强度数据生成。</p>
-<p>现在，让我们开始对 NaDGenLib 的使用吧。</p>
-<h3 id="nadgenlib_1">使用 NaDGenLib<a class="headerlink" href="#nadgenlib_1" title="Permanent link">&para;</a></h3>
-<p>NaDGenLib 使用 <code>C++</code> 编写，在安装好 <code>C++</code> 本地工具链的电脑上，下载 Release 中的 <code>genlib.h</code> 并放入你编译器的 <code>include</code> 文件夹中或工作目录（可以参考 <code>testlib.h</code> 的安装）</p>
-<p>NaDGenLib 可以帮助你使用 <code>C++</code> 语言来快速编写一个数据生成器，你可以控制输入输出文件，并将标准程序的结果写入到输出文件中。</p>
-<p>如果你想了解 NaDGenLib 的使用，或者想要现成的源程序，可以参考本项目的 <code>samples</code> 部分。</p>
+<h1 id="_1">快速上手<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>本节将会教你如何对快速上手 NaDGenLib。</p>
+<p>PS：建议使用 Visual Studio Code 来编写。</p>
+<h2 id="_2">基本结构：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>如同 C++ 的基本框架一般，NaDGenLib 也是拥有自己的基本框架。</p>
+<p>如果你只想对拍，不想做数据生成器，可以使用如下框架：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">YourFunction</span><span class="p">(){</span>
+<span class="w">    </span><span class="n">FlushIOStream</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">//TODO</span>
+<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<span class="w">    </span><span class="n">RedirectToFile</span><span class="p">(</span><span class="s">&quot;filename&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">//TODO</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>如果你是题目数据构建者，建议您使用如下框架：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">YourFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">label</span><span class="p">){</span>
+<span class="w">    </span><span class="n">FlushIOStream</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">//TODO</span>
+<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<span class="w">    </span><span class="n">RegisterStdProgram</span><span class="p">(</span><span class="s">&quot;stdpath&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">AutoGenerate</span><span class="p">(</span><span class="s">&quot;filename%d.in&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">YourFunction</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_3">生成器<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>NaDGenLib 对于每一个构造方案都叫做一个生成器，例如无根树生成器 <code>NoRootTree</code>，有向无环图生成器 <code>DAG</code>。</p>
+<p>对于每一个生成器，基本上都有 <code>Generate</code> 和 <code>Output</code> 方法，有的生成器还拥有 <code>AutoMode</code> 方法。</p>
+<p>下面是每个生成器支持的方法速览：</p>
+<table>
+<thead>
+<tr>
+<th align="center">生成器</th>
+<th align="center">支持 <code>Generate</code></th>
+<th align="center">支持 <code>Output</code></th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Random</td>
+<td align="center"><span class="arithmatex">\(\times\)</span></td>
+<td align="center"><span class="arithmatex">\(\times\)</span></td>
+<td align="center">生成随机数，被拆分成了三个函数，直接返回值</td>
+</tr>
+<tr>
+<td align="center">Sequence</td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center"><span class="arithmatex">\(\times\)</span></td>
+<td align="center">生成序列，Generate 时包含 Output 了</td>
+</tr>
+<tr>
+<td align="center">Graph</td>
+<td align="center"><span class="arithmatex">\(\times\)</span></td>
+<td align="center"><span class="arithmatex">\(\times\)</span></td>
+<td align="center">作为基类，尽量少用</td>
+</tr>
+<tr>
+<td align="center">NoRootTree</td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center">生成无根树</td>
+</tr>
+<tr>
+<td align="center">DaisyChain</td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center">生成菊花链</td>
+</tr>
+<tr>
+<td align="center">AntiSPFA</td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center">支持 <code>AutoMode</code></td>
+</tr>
+<tr>
+<td align="center">RandomGraph</td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center">生成随机图</td>
+</tr>
+<tr>
+<td align="center">DAG</td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center">生成有向无环图</td>
+</tr>
+<tr>
+<td align="center">Cactus</td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
+<td align="center">生成仙人掌</td>
+</tr>
+</tbody>
+</table>
+<p>如果还不大明白怎么用，这里给你一个示例：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">//生成一棵无根树</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<span class="w">    </span><span class="n">RedirectToFile</span><span class="p">(</span><span class="s">&quot;in.in&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">NoRootTree</span><span class="w"> </span><span class="n">nrt</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+<span class="w">    </span><span class="n">nrt</span><span class="p">.</span><span class="n">Generate</span><span class="p">();</span>
+<span class="w">    </span><span class="n">nrt</span><span class="p">.</span><span class="n">Output</span><span class="p">();</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>其他的生成器也像上面示例的那样写就行，只不过每个生成器的构造方案可能不一样，碍于篇幅限制后面将会提到每个生成器具体的构造方法和支持的方法。</p>
 
 
 
@@ -536,7 +690,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: 0. 简介" rel="prev">
+        <a href="../startup/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 1. 开始" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -545,26 +699,11 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              0. 简介
+              1. 开始
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../QuickStart/" class="md-footer__link md-footer__link--next" aria-label="下一页: 2. 快速上手" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                下一页
-              </span>
-              2. 快速上手
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   

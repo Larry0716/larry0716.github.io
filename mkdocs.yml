@@ -57,10 +57,19 @@ extra:
 nav: 
   - Home: 
     - 开始: index.md
-  - 文档:
-    - 0. 简介: NaDGenLib-docs/README.md
-    - 1. 开始: NaDGenLib-docs/startup.md
-    - 2. 快速上手: NaDGenLib-docs/QuickStart.md
+  - NaDGenLib 文档:
+    - 简介: NaDGenLib-docs/README.md
+    - 开始: NaDGenLib-docs/startup.md
+    - 快速上手: NaDGenLib-docs/QuickStart.md
+    - 随机数:
+      - Random 类: NaDGenLib-docs/random/Random.md
+      - irand 函数: NaDGenLib-docs/random/irand.md
+      - frand 函数: NaDGenLib-docs/random/frand.md
+      - srand 函数: NaDGenLib-docs/random/srand.md
+    - 序列与排列:
+      - Permutation 类: NaDGenLib-docs/seq_per/Permutation.md
+    - 图论: 
+      - Graph 类: NaDGenLib-docs/graph/Graph.md
 
 markdown_extensions:
   - admonition
@@ -98,8 +107,8 @@ markdown_extensions:
       alternate_style: true
 
 extra_javascript:
-  - '_static/js/math-csr.js?math-csr'
+  - 'static/js/math-csr.js?math-csr'
   - 'assets/vendor/mathjax/es5/tex-mml-chtml.js?math-csr'
 
 extra_css:
-  - '_static/css/extra.css?v=14'
+  - 'static/css/extra.css?v=14'
