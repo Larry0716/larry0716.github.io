@@ -10,21 +10,21 @@
         <meta name="author" content="Larry Green">
       
       
-        <link rel="canonical" href="https://larry0716.github.io/NaDGenLib-docs/QuickStart/">
+        <link rel="canonical" href="https://larry0716.github.io/NaDGenLib-docs/graph/NoRootTree/">
       
-      <link rel="icon" href="../..">
+      <link rel="icon" href="../../..">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>快速上手 - NaDGenLib Docs</title>
+        <title>NoRootTree 类 - NaDGenLib Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
         
       
       
@@ -41,9 +41,9 @@
       
     
     
-      <link rel="stylesheet" href="../../static/css/extra.css?v=14">
+      <link rel="stylesheet" href="../../../static/css/extra.css?v=14">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#noroottree" class="md-skip">
           跳转至
         </a>
       
@@ -86,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="NaDGenLib Docs" class="md-header__button md-logo" aria-label="NaDGenLib Docs" data-md-component="logo">
+    <a href="../../.." title="NaDGenLib Docs" class="md-header__button md-logo" aria-label="NaDGenLib Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              快速上手
+              NoRootTree 类
             
           </span>
         </div>
@@ -213,7 +213,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Home
       </a>
     </li>
@@ -231,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         NaDGenLib 文档
       </a>
     </li>
@@ -259,7 +259,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="NaDGenLib Docs" class="md-nav__button md-logo" aria-label="NaDGenLib Docs" data-md-component="logo">
+    <a href="../../.." title="NaDGenLib Docs" class="md-nav__button md-logo" aria-label="NaDGenLib Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -316,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         开始
       </a>
     </li>
@@ -366,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         简介
       </a>
     </li>
@@ -380,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../startup/" class="md-nav__link">
+      <a href="../../startup/" class="md-nav__link">
         开始
       </a>
     </li>
@@ -392,59 +392,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          快速上手
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../QuickStart/" class="md-nav__link">
         快速上手
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    基本结构
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    生成器
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -482,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../random/Random/" class="md-nav__link">
+      <a href="../../random/Random/" class="md-nav__link">
         Random 类
       </a>
     </li>
@@ -496,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../random/irand/" class="md-nav__link">
+      <a href="../../random/irand/" class="md-nav__link">
         irand 函数
       </a>
     </li>
@@ -510,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../random/frand/" class="md-nav__link">
+      <a href="../../random/frand/" class="md-nav__link">
         frand 函数
       </a>
     </li>
@@ -524,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../random/srand/" class="md-nav__link">
+      <a href="../../random/srand/" class="md-nav__link">
         srand 函数
       </a>
     </li>
@@ -571,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../seq_per/Permutation/" class="md-nav__link">
+      <a href="../../seq_per/Permutation/" class="md-nav__link">
         Permutation 类
       </a>
     </li>
@@ -590,12 +542,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" checked>
       
       
       
@@ -618,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../graph/Graph/" class="md-nav__link">
+      <a href="../Graph/" class="md-nav__link">
         Graph 类
       </a>
     </li>
@@ -630,11 +584,120 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../graph/NoRootTree/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NoRootTree 类
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         NoRootTree 类
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    公开的枚举类型
+  </a>
+  
+    <nav class="md-nav" aria-label="公开的枚举类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nrt_gen_conf" class="md-nav__link">
+    NRT_GEN_CONF 枚举
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    公开的成员
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    详细注解
+  </a>
+  
+    <nav class="md-nav" aria-label="详细注解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#noroottree_1" class="md-nav__link">
+    NoRootTree 构造
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate" class="md-nav__link">
+    Generate 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specificgenerate" class="md-nav__link">
+    SpecificGenerate 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output 方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    使用示例
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -646,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../graph/DaisyChain/" class="md-nav__link">
+      <a href="../DaisyChain/" class="md-nav__link">
         DaisyChain 类
       </a>
     </li>
@@ -660,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../graph/AntiSPFA/" class="md-nav__link">
+      <a href="../AntiSPFA/" class="md-nav__link">
         AntiSPFA 类
       </a>
     </li>
@@ -708,15 +771,76 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    公开的枚举类型
+  </a>
+  
+    <nav class="md-nav" aria-label="公开的枚举类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nrt_gen_conf" class="md-nav__link">
+    NRT_GEN_CONF 枚举
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    基本结构
+    公开的成员
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    生成器
+    详细注解
+  </a>
+  
+    <nav class="md-nav" aria-label="详细注解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#noroottree_1" class="md-nav__link">
+    NoRootTree 构造
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate" class="md-nav__link">
+    Generate 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specificgenerate" class="md-nav__link">
+    SpecificGenerate 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output 方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    使用示例
   </a>
   
 </li>
@@ -735,149 +859,203 @@
                 
                   
 
-  <a href="https://github.com/larry0716/NaDGenLib/edit/main/docs/NaDGenLib-docs/QuickStart.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/larry0716/NaDGenLib/edit/main/docs/NaDGenLib-docs/graph/NoRootTree.md" title="编辑此页" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="_1">快速上手<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>本节将会教你如何对快速上手 NaDGenLib。</p>
-<p>PS：建议使用 Visual Studio Code 来编写。</p>
-<h2 id="_2">基本结构<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>如同 C++ 的基本框架一般，NaDGenLib 也是拥有自己的基本框架。</p>
-<p>如果你只想对拍，不想做数据生成器，可以使用如下框架：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">YourFunction</span><span class="p">(){</span>
-<span class="w">    </span><span class="n">FlushIOStream</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//TODO</span>
-<span class="p">}</span>
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
-<span class="w">    </span><span class="n">RedirectToFile</span><span class="p">(</span><span class="s">&quot;filename&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">//TODO</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-<p>如果你是题目数据构建者，建议您使用如下框架：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">YourFunction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">label</span><span class="p">){</span>
-<span class="w">    </span><span class="n">FlushIOStream</span><span class="p">();</span>
-<span class="w">    </span><span class="c1">//TODO</span>
-<span class="p">}</span>
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
-<span class="w">    </span><span class="n">RegisterStdProgram</span><span class="p">(</span><span class="s">&quot;stdpath&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">AutoGenerate</span><span class="p">(</span><span class="s">&quot;filename%d.in&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">YourFunction</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="_3">生成器<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>NaDGenLib 对于每一个构造方案都叫做一个生成器，例如无根树生成器 <code>NoRootTree</code>，有向无环图生成器 <code>DAG</code>。</p>
-<p>对于每一个生成器，基本上都有 <code>Generate</code> 和 <code>Output</code> 方法，有的生成器还拥有 <code>AutoMode</code> 方法。</p>
-<details class="warning">
-<summary>Warning</summary>
-<p><strong>警告！Generate + Output 并不等于 AutoMode。</strong></p>
-<p>举个例子，生成器 <code>AntiSPFA</code> 调用 <code>Generate</code> 完后使用 <code>Output</code> 只会输出边。而使用 <code>AutoMode</code> 则会输出点数，边数，起点和带权边。</p>
-</details>
-<p>下面是每个生成器支持的方法速览：</p>
+<h1 id="noroottree">NoRootTree 类<a class="headerlink" href="#noroottree" title="Permanent link">&para;</a></h1>
+<p>无根树生成器，用于生成无根树。</p>
+<h2 id="_1">公开的枚举类型<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="nrt_gen_conf"><code>NRT_GEN_CONF</code> 枚举<a class="headerlink" href="#nrt_gen_conf" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th align="center">生成器</th>
-<th align="center">支持 <code>Generate</code></th>
-<th align="center">支持 <code>Output</code></th>
-<th align="center">备注</th>
+<th align="right">名称</th>
+<th align="left">注释</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">Random</td>
-<td align="center"><span class="arithmatex">\(\times\)</span></td>
-<td align="center"><span class="arithmatex">\(\times\)</span></td>
-<td align="center">生成随机数，被拆分成了三个函数，直接返回值</td>
+<td align="right"><code>METHOD_CHAIN</code></td>
+<td align="left">描述生成方案为生成链</td>
 </tr>
 <tr>
-<td align="center">Sequence</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\times\)</span></td>
-<td align="center">生成序列，Generate 时包含 Output 了</td>
+<td align="right"><code>METHOD_DAISY</code></td>
+<td align="left">描述生成方案为生成菊花图</td>
 </tr>
 <tr>
-<td align="center">Permutation</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\times\)</span></td>
-<td align="center">生成排列，Generate 时包含 Output 了</td>
+<td align="right"><code>METHOD_CHAIN_WITH_CHAIN</code></td>
+<td align="left">描述生成方案为生成链套链</td>
 </tr>
 <tr>
-<td align="center">Graph</td>
-<td align="center"><span class="arithmatex">\(\times\)</span></td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center">作为基类，尽量少用</td>
+<td align="right"><code>METHOD_DAISY_WITH_DAISY</code></td>
+<td align="left">描述生成方案为生成菊花图套菊花图</td>
 </tr>
 <tr>
-<td align="center">NoRootTree</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center">生成无根树</td>
+<td align="right"><code>METHOD_CHAIN_WITH_DAISY</code></td>
+<td align="left">描述生成方案为生成链套菊花图</td>
 </tr>
 <tr>
-<td align="center">DaisyChain</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center">生成菊花链</td>
+<td align="right"><code>METHOD_COMP_KB_TREE</code></td>
+<td align="left">描述生成方案为生成完全 <span class="arithmatex">\(K\)</span> 叉树</td>
 </tr>
 <tr>
-<td align="center">AntiSPFA</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center">支持 <code>AutoMode</code></td>
+<td align="right"><code>METHOD_RND_TREE</code></td>
+<td align="left">描述生成方案为生成随机树</td>
 </tr>
 <tr>
-<td align="center">RandomGraph</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center">生成随机图</td>
-</tr>
-<tr>
-<td align="center">DAG</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center">生成有向无环图</td>
-</tr>
-<tr>
-<td align="center">Cactus</td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center"><span class="arithmatex">\(\checkmark\)</span></td>
-<td align="center">生成仙人掌</td>
+<td align="right"><code>METHOD_TREE_OVER_TREE</code></td>
+<td align="left">描述生成方案为生成随机树套随机树</td>
 </tr>
 </tbody>
 </table>
-<p>如果还不大明白怎么用，这里给你一个示例：</p>
+<h2 id="_2">公开的成员<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="right">返回类型</th>
+<th align="left">函数定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"></td>
+<td align="left"><code>NoRootTree(int verCount, int vmin, int vmax)</code></td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="left"><code>NoRootTree(int verCount)</code></td>
+</tr>
+<tr>
+<td align="right"><code>void</code></td>
+<td align="left"><code>Generate(void)</code></td>
+</tr>
+<tr>
+<td align="right"><code>void</code></td>
+<td align="left"><code>SpecificGenerate(NRT_GEN_CONF method)</code></td>
+</tr>
+<tr>
+<td align="right"><code>void</code></td>
+<td align="left"><code>Output(bool shuffleOutput = true)</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">详细注解<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="noroottree_1"><code>NoRootTree</code> 构造<a class="headerlink" href="#noroottree_1" title="Permanent link">&para;</a></h3>
+<p><strong>描述：</strong></p>
+<p>无根树的构造函数。</p>
+<p><strong>语法：</strong></p>
+<p>带边权重载：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">NoRootTree</span><span class="o">::</span><span class="n">NoRootTree</span><span class="p">(</span>
+<span class="w">    </span><span class="p">[</span><span class="n">in</span><span class="p">]</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">verCount</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="n">in</span><span class="p">]</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">vmin</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="n">in</span><span class="p">]</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">vmax</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>无边权重载：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">NoRootTree</span><span class="o">::</span><span class="n">NoRootTree</span><span class="p">(</span>
+<span class="w">    </span><span class="p">[</span><span class="n">in</span><span class="p">]</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">verCount</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>参数：</strong></p>
+<ul>
+<li><code>verCount</code>：无根树的点数。</li>
+<li><code>vmin</code>：无根树边权最小值（<code>Override!!</code>）</li>
+<li><code>vmax</code>：无根树边权最大值（<code>Override!!</code>）</li>
+</ul>
+<p><strong>警告：</strong></p>
+<p>注意，两个重载之间本质不同！！请注意不要混用。</p>
+<hr />
+<h3 id="generate"><code>Generate</code> 方法<a class="headerlink" href="#generate" title="Permanent link">&para;</a></h3>
+<p><strong>描述：</strong></p>
+<p>启用无根树生成。</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">NoRootTree::Generate</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>注释：</strong></p>
+<p>使用这个函数，您将会有如下概率生成如下结构：</p>
+<table>
+<thead>
+<tr>
+<th align="center">结构</th>
+<th align="center">概率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">菊花图</td>
+<td align="center"><span class="arithmatex">\(5\%\)</span></td>
+</tr>
+<tr>
+<td align="center">链</td>
+<td align="center"><span class="arithmatex">\(5\%\)</span></td>
+</tr>
+<tr>
+<td align="center">链套链</td>
+<td align="center"><span class="arithmatex">\(15\%\)</span></td>
+</tr>
+<tr>
+<td align="center">菊花图套菊花图</td>
+<td align="center"><span class="arithmatex">\(15\%\)</span></td>
+</tr>
+<tr>
+<td align="center">链套菊花图</td>
+<td align="center"><span class="arithmatex">\(20\%\)</span></td>
+</tr>
+<tr>
+<td align="center">完全 <span class="arithmatex">\(K\)</span> 叉树</td>
+<td align="center"><span class="arithmatex">\(15\%\)</span></td>
+</tr>
+<tr>
+<td align="center">随机树</td>
+<td align="center"><span class="arithmatex">\(15\%\)</span></td>
+</tr>
+<tr>
+<td align="center">随机树套随机树</td>
+<td align="center"><span class="arithmatex">\(10\%\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="specificgenerate"><code>SpecificGenerate</code> 方法<a class="headerlink" href="#specificgenerate" title="Permanent link">&para;</a></h3>
+<p><strong>描述：</strong></p>
+<p>生成特定树结构。</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">NoRootTree::SpecificGenerate</span><span class="p">(</span>
+<span class="w">    </span><span class="p">[</span><span class="n">in</span><span class="p">]</span><span class="w">    </span><span class="n">NRT_GEN_CONF</span><span class="w"> </span><span class="n">method</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>参数：</strong></p>
+<ul>
+<li><code>method</code>：生成方式，具体见枚举 <code>NRT_GEN_CONF</code>。</li>
+</ul>
+<hr />
+<h3 id="output"><code>Output</code> 方法<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
+<p><strong>描述：</strong></p>
+<p>输出生成器的生成结果。</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">NoRootTree::Output</span><span class="p">(</span>
+<span class="w">    </span><span class="p">[</span><span class="n">in</span><span class="p">,</span><span class="w"> </span><span class="n">optional</span><span class="p">]</span><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">shuffleOutput</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>参数：</strong></p>
+<ul>
+<li><code>shuffleOutput</code>：打乱输出开关，默认为开启（<code>true</code>）</li>
+</ul>
+<h2 id="_4">使用示例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.luogu.com.cn/problem/P3806">洛谷 P3806 【模板】点分治1</a> 的测试数据生成：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -888,19 +1066,79 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">//生成一棵无根树</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">label</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">FlushIOStream</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">minN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="n">maxN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e4</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">minM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="n">maxM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="w">        </span><span class="n">maxN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span>
+<span class="w">        </span><span class="n">maxM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="n">maxN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e3</span><span class="p">;</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="n">minN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2e3</span><span class="p">,</span><span class="w"> </span><span class="n">minM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+<span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irand</span><span class="p">(</span><span class="n">minN</span><span class="p">,</span><span class="w"> </span><span class="n">maxN</span><span class="p">);</span>
+<span class="w">    </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irand</span><span class="p">(</span><span class="n">minM</span><span class="p">,</span><span class="w"> </span><span class="n">maxM</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39; &#39;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">NoRootTree</span><span class="w"> </span><span class="n">nrt</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1e4</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span>
+<span class="w">        </span><span class="n">nrt</span><span class="p">.</span><span class="n">SpecificGenerate</span><span class="p">(</span><span class="n">METHOD_CHAIN</span><span class="p">);</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="n">nrt</span><span class="p">.</span><span class="n">Generate</span><span class="p">();</span>
+<span class="w">    </span><span class="n">nrt</span><span class="p">.</span><span class="n">Output</span><span class="p">();</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">m</span><span class="o">--</span><span class="p">)</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">irand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1e7</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">AutoGenerate</span><span class="p">(</span><span class="s">&quot;dfz%d.in&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>生成一张有 <span class="arithmatex">\(30\)</span> 个点的菊花图：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="n">RedirectToFile</span><span class="p">(</span><span class="s">&quot;in.in&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="n">NoRootTree</span><span class="w"> </span><span class="n">nrt</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
-<span class="w">    </span><span class="n">nrt</span><span class="p">.</span><span class="n">Generate</span><span class="p">();</span>
+<span class="w">    </span><span class="n">nrt</span><span class="p">.</span><span class="n">SpecificGenerate</span><span class="p">(</span><span class="n">METHOD_DAISY</span><span class="p">);</span>
 <span class="w">    </span><span class="n">nrt</span><span class="p">.</span><span class="n">Output</span><span class="p">();</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>其他的生成器也像上面示例的那样写就行，只不过每个生成器的构造方案可能不一样，碍于篇幅限制后面将会提到每个生成器具体的构造方法和支持的方法。</p>
 
 
 
@@ -926,7 +1164,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../startup/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 开始" rel="prev">
+        <a href="../Graph/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Graph 类" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -935,20 +1173,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              开始
+              Graph 类
             </div>
           </div>
         </a>
       
       
         
-        <a href="../random/Random/" class="md-footer__link md-footer__link--next" aria-label="下一页: Random 类" rel="next">
+        <a href="../DaisyChain/" class="md-footer__link md-footer__link--next" aria-label="下一页: DaisyChain 类" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Random 类
+              DaisyChain 类
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1011,16 +1249,16 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
-        <script src="../../static/js/math-csr.js?math-csr"></script>
+        <script src="../../../static/js/math-csr.js?math-csr"></script>
       
-        <script src="../../assets/vendor/mathjax/es5/tex-mml-chtml.js?math-csr"></script>
+        <script src="../../../assets/vendor/mathjax/es5/tex-mml-chtml.js?math-csr"></script>
       
-        <script src="../../search/main.js"></script>
+        <script src="../../../search/main.js"></script>
       
     
     

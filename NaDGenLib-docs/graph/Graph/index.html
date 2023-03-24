@@ -607,17 +607,17 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    公开的方法：
+    公开的成员
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    详细注解：
+    详细注解
   </a>
   
-    <nav class="md-nav" aria-label="详细注解：">
+    <nav class="md-nav" aria-label="详细注解">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -634,8 +634,36 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    clear 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getedgecount" class="md-nav__link">
+    GetEdgeCount 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output 方法
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    使用示例
+  </a>
   
 </li>
       
@@ -643,6 +671,48 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NoRootTree/" class="md-nav__link">
+        NoRootTree 类
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DaisyChain/" class="md-nav__link">
+        DaisyChain 类
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AntiSPFA/" class="md-nav__link">
+        AntiSPFA 类
+      </a>
     </li>
   
 
@@ -689,17 +759,17 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    公开的方法：
+    公开的成员
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    详细注解：
+    详细注解
   </a>
   
-    <nav class="md-nav" aria-label="详细注解：">
+    <nav class="md-nav" aria-label="详细注解">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -716,8 +786,36 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    clear 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getedgecount" class="md-nav__link">
+    GetEdgeCount 方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output 方法
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    使用示例
+  </a>
   
 </li>
       
@@ -748,7 +846,7 @@
 <p>该类多用作基类，不建议大家直接使用</p>
 <p>自定义生成的时候，请尽量使用继承的方式而不是创建实例。</p>
 </details>
-<h2 id="_1">公开的方法：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">公开的成员<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -787,7 +885,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_2">详细注解：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">详细注解<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="graph_1"><code>Graph</code> 构造<a class="headerlink" href="#graph_1" title="Permanent link">&para;</a></h3>
 <p><strong>描述：</strong></p>
 <p><code>Graph</code> 类的构造函数。</p>
@@ -809,10 +907,10 @@
 <p><strong>参数：</strong></p>
 <ul>
 <li><code>verCount</code>：图的点数</li>
-<li><code>undirectedMap</code>：无向图开关，默认为有向图（false）</li>
-<li><code>weightedMap</code>：带权图开关，默认为不带权（false）</li>
-<li><code>muiltiedgeCheck</code>：重边检查开关，默认为关闭（false）</li>
-<li><code>loopCheck</code>：自环检查开关，默认为关闭（false）</li>
+<li><code>undirectedMap</code>：无向图开关，默认为有向图（<code>false</code>）</li>
+<li><code>weightedMap</code>：带权图开关，默认为不带权（<code>false</code>）</li>
+<li><code>muiltiedgeCheck</code>：重边检查开关，默认为关闭（<code>false</code>）</li>
+<li><code>loopCheck</code>：自环检查开关，默认为关闭（<code>false</code>）</li>
 </ul>
 <hr />
 <h3 id="add_edge"><code>add_edge</code> 方法<a class="headerlink" href="#add_edge" title="Permanent link">&para;</a></h3>
@@ -852,6 +950,117 @@
 <p>该函数的两个重载完全不同，请注意不要混淆，
 若不带权图使用了带权图的 <code>add_edge</code>，则会触发断言失败，反之亦然。</p>
 <hr />
+<h3 id="clear"><code>clear</code> 方法<a class="headerlink" href="#clear" title="Permanent link">&para;</a></h3>
+<p><strong>描述：</strong></p>
+<p>用于清空当前容器内的数据。</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">Graph::clear</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>警告：</strong></p>
+<p>注意，<code>clear</code> 并不会自动缩放内存的使用，也就是说，<code>clear</code> 方法仅仅是起到了清空的作用，其并没有释放占用的内存。</p>
+<hr />
+<h3 id="getedgecount"><code>GetEdgeCount</code> 方法<a class="headerlink" href="#getedgecount" title="Permanent link">&para;</a></h3>
+<p><strong>描述：</strong></p>
+<p>用于获取当前容器内拥有多少条边。</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">Graph::GetEdgeCount</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>返回：</strong></p>
+<p>当前容器的边数。</p>
+<hr />
+<h3 id="output"><code>Output</code> 方法<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
+<p><strong>描述：</strong></p>
+<p>用于输出当前容器内的边。</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">Output</span><span class="p">(</span>
+<span class="w">    </span><span class="p">[</span><span class="n">in</span><span class="p">,</span><span class="w"> </span><span class="n">optional</span><span class="p">]</span><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">shuffleOutput</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>参数：</strong></p>
+<ul>
+<li><code>shuffleOutput</code>：打乱输出开关，默认为启用（<code>true</code>）</li>
+</ul>
+<h2 id="_3">使用示例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>实现生成一张不带权的无向基环树：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;genlib.h&quot;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Generator</span><span class="p">;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">BaseRingTree</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">protected</span><span class="w"> </span><span class="n">Graph</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">BaseRingTree</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">verCount</span><span class="p">)</span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">Graph</span><span class="p">(</span><span class="n">verCount</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">vertexCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">verCount</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">Generate</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">vertexCount</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">            </span><span class="n">add_edge</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">rnd</span><span class="p">.</span><span class="n">irand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="mi">-1</span><span class="p">));</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="n">to</span><span class="p">;</span>
+<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rnd</span><span class="p">.</span><span class="n">irand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">vertexCount</span><span class="p">);</span>
+<span class="w">            </span><span class="n">to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rnd</span><span class="p">.</span><span class="n">irand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">vertexCount</span><span class="p">);</span>
+<span class="w">            </span><span class="n">cnt</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">add_edge</span><span class="p">(</span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="n">to</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">output</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">shuffleOutput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Output</span><span class="p">(</span><span class="n">shuffleOutput</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="n">Random</span><span class="w"> </span><span class="n">rnd</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">vertexCount</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">RedirectToFile</span><span class="p">(</span><span class="s">&quot;in.in&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">BaseRingTree</span><span class="w"> </span><span class="nf">brt</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+<span class="w">    </span><span class="n">brt</span><span class="p">.</span><span class="n">Generate</span><span class="p">();</span>
+<span class="w">    </span><span class="n">brt</span><span class="p">.</span><span class="n">output</span><span class="p">();</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>PS：当然，我们也为您实现了基环树，计划在下个版本发布（大雾）</p>
 
 
 
@@ -891,6 +1100,21 @@
           </div>
         </a>
       
+      
+        
+        <a href="../NoRootTree/" class="md-footer__link md-footer__link--next" aria-label="下一页: NoRootTree 类" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              NoRootTree 类
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
